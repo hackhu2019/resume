@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[求职]hack-hu-Java开发工程师</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed() {
+                    var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                    document.getElementById('side').style.position = value;
+                }
+            </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 414px) {
+                    .switch {
+                        position: relative;
+                        display: inline-block !important;
+                        width: 60px;
+                        height: 34px;
+                    }
+
+                    .switch input {
+                        display: none;
+                    }
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    .slider:before {
+                        position: absolute;
+                        content: "";
+                        height: 26px;
+                        width: 26px;
+                        left: 4px;
+                        bottom: 4px;
+                        background-color: white;
+                        -webkit-transition: .4s;
+                        transition: .4s;
+                    }
+
+                    input:checked+.slider {
+                        background-color: #1abc9c;
+                    }
+
+                    input:focus+.slider {
+                        box-shadow: 0 0 1px #1abc9c;
+                    }
+
+                    input:checked+.slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform: translateX(26px);
+                        transform: translateX(26px);
+                    }
+
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+
+                    .slider.round:before {
+                        border-radius: 50%;
+                    }
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <!-- <div class="loading">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> -->
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/card.jpg">
+                </section>
+
+                <h1 class="name"><strong>意向岗位</strong></h1>
+                <h4 class="info-job"><strong>Java开发工程师</strong> </h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>hack-hu / 男 / 23岁</span>
+                    </li>
+                    <li>
+                        <label>英语水平</label>
+                        <span>CET-4</span>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <label><i class="fa fa-qq"></i></label>
+                        <a target="_blank">923091621</a>
+                    </li>
+                    <li>
+                        <label><i class="fa fa-envelope"></i></label>
+                        <a href="mailto:hack_hu@163.com" target="_blank">hack_hu@163.comn</a>
+                    </li>
+                    <li>
+                        <label><i class="fa fa-file-text-o"></i></label>
+                        <a href="https://blog.csdn.net/qq_37888382" target="_blank">hack-hu 的博客</a>
+                    </li>
+                    <li>
+                        <label><i class="fa fa-github" aria-hidden="true"></i></label>
+                        <a href="https://github.com/hackhu2019" target="_blank">github.com/hackhu2019</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                    <h2>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                    <hr />
+                    <ul>
+                        <li>
+                            <h3>
+                                <p>浙江大学宁波理工学院 —— 本科</p>
+                                <p>专业：软件工程</p>
+                            </h3>
+                            <time>时间：<mark> 2018.9-2020.7</mark></time>
+                            <p>
+                                GPA：<mark>4.38/5.0</mark>
+                            </p>
+                            <p>专业排名：<mark>前 5%</mark>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+    
+                <!-- 个人荣誉 -->
+                <section class="edu info-unit">
+                    <h2>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>个人荣誉</h2>
+                    <hr />
+    
+    
+                    1、 2018 年浙江省优秀毕业生<br />
+                    2、 2017 年获得浙江省政府奖学金 <br />
+                    3、 2018 年获取浙江大学宁波理工学院第十五届程序设计比赛三等奖 <br />
+    
+                </section>
+            <!-- 个人技能 -->
+            <!-- <div class="stack info-unit">
+                <h2><i class="fa fa-code" aria-hidden="true"></i>个人技能</h2>
+                <hr />
+                
+            </div> -->
+        </section>
+
+        <section class="main">
+
+            <!-- 专业能力 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>专业能力</h2>
+                <hr />
+                <p> 掌握计算机网络、操作系统、软件工程基础课程，熟悉HTML5、CSS3、JavaScript，熟悉CSS3选择器，JavaScript事件，以及Bootstrap、jQuery等前端开发框架
+                </p>
+                <p>
+                    熟悉常用数据结构(Array、List、Stack、Queue、Heap、Tree),了解Hash、跳表，熟悉常用的排序算法(冒泡、插入、选择、快排、堆排、归并、桶)
+                </p>
+                <p>
+                    熟悉C/Java/C#、理解面向对象思想，掌握Java继承和多态特性。了解JavaWeb常用框架，如Spring、SpringBoot 等。
+                </p>
+            </section>
+
+            <!-- 个人经历 -->
+
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>个人经历</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>知乎专栏：「<a href="https://zhuanlan.zhihu.com/c_1088398003815100416"
+                                    target="_blank">码农学习之路</a>」</span>
+                            <time>2019.01-至今</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li><i class="fa fa-users" aria-hidden="true"></i>
+                                [担任角色]：负责人
+                            </li>
+                            <li>
+                                <p>
+                                    将自己平时学习编程的心得体会撰写成文章发表在知乎专栏以及 <a href="https://blog.csdn.net/qq_38288847"
+                                        target="_blank">个人博客</a> 上。
+                                    一方面记录自己自学 Java 以及数据结构与算法的历程，另一方面希望能够分享自己的一些采坑经验，
+                                    让有需要的人可以更好地度过踩坑期。
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>极客时间：「<a href="https://www.zhihu.com/question/301150832/answer/529309515"
+                                    target="_blank">ARST
+                                    打卡</a>」</span>
+                            <time>2018.11-至今</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li><i class="fa fa-users" aria-hidden="true"></i>
+                                [担任角色]：参与者
+                            </li>
+                            <li>
+                                <p>
+                                    每周完成一个ARTS： 每周至少做一个 leetcode 的算法题、
+                                    阅读并点评至少一篇英文技术文章、学习至少一个技术技巧、分享一篇有观点和思考的技术文章。（也就是 Algorithm、Review、Tip、Share 简称ARTS）
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>项目经验</h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span><a href="https://gitee.com/hackhu96/mall" target="_blank">[项目1]商城系统</a></span>
+                            <span class="link">
+                                <a href="https://gitee.com/hackhu96/mall" target="_blank">Demo</a>
+                            </span>
+                            <time>2019.8-2019.9</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：Spring + Spring MVC + MyBatis + MySQL + Ajax</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [模块]用户管理、分类管理、商品管理、购物车管理、收货地址管理、订单管理
+                                <br />
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]个人
+                                <br />
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]<br />
+                                <p>
+                                    &emsp;&emsp;1、用枚举类型代替无意义常量，规范化编程<br />
+                                    &emsp;&emsp;2、利用 MD5 实现对密码的加密，同时针对常见的：横向越权、纵向越权问题等进行防御式编程<br />
+                                    &emsp;&emsp;3、对于产品分类的多层级问题结合递归算法解决<br />
+                                    &emsp;&emsp;4、对于浮点运算的精度丢失问题进行针对性处理
+                                </p>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2] <a href="https://github.com/hackhu2019/NITBook" target="_blank">NIT
+                                    图书管理系统</a></span>
+                            <span class="link">
+                                <a href="https://github.com/hackhu2019/NITBook" target="_blank">Demo</a>
+                            </span>
+                            <time>2019.4-2019.6</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [模块]用户管理、图书管理、图书借阅管理等
+                            </li>
+                            <li>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]个人
+                            </li>
+                            <li>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]<br />
+                                <p>
+                                    &emsp;&emsp;1、对于不同权限的用户进行访问控制
+                                    <br>&emsp;&emsp;2、对于书籍的展示进行分页处理，提供模糊查询和高级查询
+                                    <br>&emsp;&emsp;3、对于图书借还进行限制，在借还时判断是否符合借阅规则
+                                    <br>&emsp;&emsp;4、前后端分离，使用 Aajx 进行前后端交互
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+            
+
+
+
+        </section>
+    </article>
+
+
+    <footer class="footer">
+        <p> <b>感谢您花时间阅读我的简历，期待能有机会和您共事。</b> </p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://github.com/hackhu2019" target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="https://blog.csdn.net/qq_38288847" target="_blank">Blog</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+
+</html>
